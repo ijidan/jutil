@@ -11,10 +11,11 @@ type timeUtil struct {
 }
 
 //获取当前时间戳
-func (t *timeUtil) GetCurrentTimeStamp()string {
+func (t *timeUtil) GetCurrentTimeStamp() int {
 	timeStamp := time.Now().Unix()
 	timeStr := strconv.FormatInt(timeStamp, 10)
-	return timeStr
+	timeInt,_:=strconv.Atoi(timeStr)
+	return timeInt
 }
 
 //获取当前时间

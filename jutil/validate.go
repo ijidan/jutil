@@ -48,6 +48,8 @@ type Validate struct {
 	Trans ut.Translator
 }
 
+
+
 //获取实例
 func NewValidate() *Validate {
 	var once sync.Once
